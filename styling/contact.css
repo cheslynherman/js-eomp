@@ -41,62 +41,40 @@ body {
     object-fit: cover;
 }
 
-.hero {
-    height: 85vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
+.heading {
     margin-bottom: 20px;
     color: #B20600;
 }
 
-.landing {
-    margin-top: 45vh;
-    margin-left: 7vh;
-}
-
-.hero-title {
-    font-size: 50px;
-}
-
-.hero-text {
-    font-size: 25px;
-}
-
-/* card styling */
-.card {
-    /* background-color: white !important; */
-    color: #B20600 !important;
+.contact {
+    width: 65%;
+    border-left: 2px solid #B20600;
     border-top: 2px solid #B20600;
-    border-right: 2px solid #B20600;
-    border-bottom: none;
-    border-left: none;
-    padding: 10px;
+    padding: 5vh !important;
     border-radius: 20px !important;
-    height: 76vh;
-}
-
-.card-btns {
-    background: white !important;
-    color: #B20600 !important;
-    border-color: #B20600 !important;
-}
-
-.card-img-top {
-    border-radius: 10px;
-}
-
-#product-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px;
     margin-bottom: 20px;
 }
 
-.sellers {
+label {
+    padding-right: 15px;
     color: #B20600;
-    margin-bottom: 10px;
+}
+
+input, textarea {
+    border: 2px solid #B20600 !important;
+    color: #B20600 !important;
+    /* background: transparent !important; */
+}
+
+::placeholder {
+    color: #B20600 !important;
+}
+
+.submit, .reset {
+    color: #B20600;
+    border: 2px solid #B20600;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* footer styling */
