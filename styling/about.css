@@ -28,8 +28,8 @@
 }
 
 .logo-img {
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 65px;
 }
 
 /* body and content styling */
@@ -41,46 +41,79 @@ body {
     object-fit: cover;
 }
 
-.heading {
+/* founder section styling */
+.founder-section {
     margin-bottom: 20px;
-    color: #B20600;
-}
-
-.contact {
-    width: 55%;
-    border-left: 2px solid #B20600;
-    border-top: 2px solid #B20600;
-    padding: 5vh !important;
+    width: 80%;
+    border-bottom: 2px solid #B20600;
     border-radius: 20px !important;
-    margin-bottom: 20px !important;
 }
-
-label {
-    padding-right: 15px;
+.about-heading {
     color: #B20600;
+    margin-bottom: 20px;
 }
 
-input, textarea {
-    border: 2px solid #B20600 !important;
-    color: #B20600 !important;
-    /* background: transparent !important; */
+.founder {
+    width: 90%;
+    margin-bottom: 20px;
 }
-
-::placeholder {
-    color: #B20600 !important;
-}
-
-.submit, .reset {
+.founder-text {
     color: #B20600;
-    border: 2px solid #B20600;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 10px;
+    margin: 10px;
 }
+.founder-img {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* testimonials section */
+.testimonial-section {
+    color: #B20600;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.card {
+    background-color: transparent !important;
+    color: #B20600 !important;
+    border-left: 2px solid #B20600;
+    border-right: 2px solid #B20600;
+    border-bottom: none;
+    border-top: none;
+    padding: 10px;
+    border-radius: 20px !important;
+    margin: 20px;
+}
+.card-img-top {
+    border-radius: 10px;
+    height: 60%;
+}
+
+/* info section */
+.info {
+    color: #B20600;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-top: 2px solid #B20600;
+    border-radius: 20px !important;
+}
+
+
+
 
 /* footer styling */
 footer {
     background: #B20600;
     color: white;
+
 }
 
 .social-links {
@@ -105,3 +138,6 @@ footer {
 .footer-p {
     padding: 5px;
 }
+
+
+

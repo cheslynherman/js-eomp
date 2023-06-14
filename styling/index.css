@@ -65,7 +65,7 @@ body {
 
 /* card styling */
 .card {
-    /* background-color: white !important; */
+    background-color: transparent !important;
     color: #B20600 !important;
     border-top: 2px solid #B20600;
     border-right: 2px solid #B20600;
