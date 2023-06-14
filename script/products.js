@@ -167,22 +167,22 @@ function checkout() {
 }
 
 function disAll() {
-  displayItems(items)
+  displayItems(items);
 }
 
-function disAnime(){
-  let anime = items.filter ((item) => item.category === "Anime");
-  displayItems(anime)
+function disAnime() {
+  let anime = items.filter((item) => item.category === "Anime");
+  displayItems(anime);
 }
 
-function disHorror(){
-  let horror = items.filter ((item) => item.category === "Horror");
-  displayItems(horror)
+function disHorror() {
+  let horror = items.filter((item) => item.category === "Horror");
+  displayItems(horror);
 }
 
-function disHero () {
-  let hero = items.filter ((item) => item.category === "Heroes and Villains");
-  displayItems(hero)
+function disHero() {
+  let hero = items.filter((item) => item.category === "Heroes and Villains");
+  displayItems(hero);
 }
 
 // const showBtn = document.getElementById("allBtn");

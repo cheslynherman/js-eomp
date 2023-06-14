@@ -16,8 +16,8 @@
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styling/products.css" />
-    <title>The Quirky Studio - Products</title>
+    <link rel="stylesheet" href="../styling/index.css" />
+    <title>The Quirky Studio - Home</title>
     <style>
       ::-webkit-scrollbar {
         display: none;
@@ -50,12 +50,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a
-              class="nav-btns nav-link btn text-white"
-              href="../html/index.html"
+            <a class="nav-btns nav-link btn text-white" href="../index.html"
               >Home</a
             >
-            <a class="nav-btns nav-link disabled btn text-white" href="#"
+            <a class="nav-btns nav-link btn text-white" href="./products.html"
               >Products</a
             >
             <a class="nav-btns nav-link btn text-white" href="./about.html"
@@ -64,20 +62,9 @@
             <a class="nav-btns nav-link btn text-white" href="./contact.html"
               >Contact</a
             >
-            <a class="nav-btns nav-link btn text-white" href="#">Admin</a>
-            <button
-              type="button"
-              class="btn"
-              data-bs-toggle="modal"
-              data-bs-target="#myModal"
-              id="cart-btn"
+            <a class="nav-btns nav-link disabled btn text-white" href="#"
+              >Admin</a
             >
-              <img
-                src="https://i.postimg.cc/g2n8cgL7/icons8-cart-100.png"
-                alt="Cart"
-                class="cart-img"
-              />
-            </button>
           </div>
         </div>
       </div>
@@ -87,47 +74,30 @@
   <!-- End of Nav -->
 
   <body>
-    <div class="modal" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Cart Items</h4>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div id="cart-text"></div>
-          <div class="modal-footer">
-            <p><span id="total"></span></p>
-            <button class="btn" onclick="checkout()">Checkout</button>
-          </div>
-        </div>
-      </div>
+    <h3 class="heading text-center">Admin</h3>
+    <div id="inputs">
+      <label>Name: </label><input type="text" id="itemName"/> <label>Image: </label
+      ><input type="text" placeholder="Insert url" id="itemImg"/> <label>Price:</label
+      ><input type="number" id="itemPrice"/> <label>Category:</label><input type="text" id="itemCategory"/>
+      <button class="addButton" onclick="addtoTable()"> Add</button>
     </div>
 
-    <h3 class="heading text-center">Our Products</h3>
-    <div class="filters container-fluid d-flex justify-content-center">
-      <button id="allBtn" onclick="disAll()" class="filter-buttons btn">
-        All
-      </button>
-      <button id="animeBtn" onclick="disAnime()" class="filter-buttons btn">
-        Anime
-      </button>
-      <button id="horrorBtn" onclick="disHorror()" class="filter-buttons btn">
-        Horror
-      </button>
-      <button id="heroBtn" onclick="disHero()" class="filter-buttons btn">
-        Heroes and Villains
-      </button>
-    </div>
-    <div id="items"></div>
-
-    <div id="cart">
-      <div id="cart-text"></div>
-    </div>
-    <script src="../script/products.js"></script>
+    <div id="table"></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody id="admin-table">
+         
+        </tbody>
+    </table>
+    <script src="../script/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
