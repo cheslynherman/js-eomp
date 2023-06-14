@@ -16,7 +16,7 @@ function addtoTable(){
       table.innerHTML += `
         <tr>
         <td>${data.name}</td>
-        <td>${data.image}</td>
+        <td><img src="${data.image}"></td>
         <td>${data.price}</td>
         <td>${data.category}</td>
         <td></td>
