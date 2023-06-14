@@ -93,9 +93,9 @@ const items = [
   },
 ];
 
-function displayItems(item) {
+function displayItems(items) {
   const myItems = document.getElementById("items");
-  myItems.innerHTML= "";
+  myItems.innerHTML = "";
   items.forEach((data) => {
     const itemsElement = document.createElement("div");
     itemsElement.innerHTML += `
@@ -111,7 +111,7 @@ function displayItems(item) {
     myItems.appendChild(itemsElement);
   });
 }
-displayItems();
+displayItems(items);
 
 let cart = JSON.parse(localStorage.getItem("Item")) || [];
 
@@ -166,31 +166,33 @@ function checkout() {
   updateToCart();
 }
 
-// function all() {
+function disAll() {
+  displayItems(items)
+}
 
-// }
+function disAnime(){
+  let anime = items.filter ((item) => item.category === "Anime");
+  displayItems(anime)
+}
 
-// function animeBtn () {
+function disHorror(){
+  let horror = items.filter ((item) => item.category === "Horror");
+  displayItems(horror)
+}
 
-// }
+function disHero () {
+  let hero = items.filter ((item) => item.category === "Heroes and Villains");
+  displayItems(hero)
+}
 
-// function horrorBtn ()
-// {
+// const showBtn = document.getElementById("allBtn");
+// showBtn.addEventListener("click", displayItems);
 
-// }
+// const animeBtn = document.getElementById("animeBtn");
+// animeBtn.addEventListener("click", animeBtn);
 
-// function heroBtn() {
+// const horrorBtn = document.getElementById("horrorBtn");
+// horrorBtn.addEventListener("click", horrorBtn);
 
-// }
-
-const showBtn = document.getElementById("allBtn");
-showBtn.addEventListener("click", all)
-
-const animeBtn = document.getElementById("animeBtn")
-animeBtn.addEventListener("click", animeBtn)
-
-const horrorBtn = document.getElementById ("horrorBtn")
-horrorBtn.addEventListener("click", horrorBtn)
-
-const heroBtn = document.getElementById ("heroBtn")
-horrorBtn.addEventListener("click", heroBtn)
+// const heroBtn = document.getElementById("heroBtn");
+// horrorBtn.addEventListener("click", heroBtn);
