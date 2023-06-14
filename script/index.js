@@ -30,7 +30,7 @@ items.forEach((data) => {
   <div class="card-body">
     <h5 class="card-title">${data.name}</h5>
     <p class="card-text">R ${data.price}</p>
-    <a href="#" class="card-btns btn btn-primary">See More</a>
+    <a href="../html/products.html" class="card-btns btn btn-primary">See More</a>
   </div>
 </div>
     `
