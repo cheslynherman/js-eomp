@@ -100,15 +100,20 @@
           </div>
           <div id="cart-text"></div>
           <div class="modal-footer">
-              
-              <p><span id="total"></span></p>
-            <button class="btn" onclick="clearCart()">Checkout</button>
+            <p><span id="total"></span></p>
+            <button class="btn" onclick="checkout()">Checkout</button>
           </div>
         </div>
       </div>
     </div>
 
     <h3 class="heading text-center">Our Products</h3>
+    <div class="filters container-fluid d-flex justify-content-center">
+      <button id="allBtn" class="filter-buttons btn">All</button>
+      <button id="animeBtn" class="filter-buttons btn">Anime</button>
+      <button id="horrorBtn" class="filter-buttons btn">Horror</button>
+      <button id="heroBtn" class="filter-buttons btn">Heroes and Villains</button>
+    </div>
     <div id="items"></div>
 
     <div id="cart">
