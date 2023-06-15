@@ -166,3 +166,11 @@ footer {
     align-items: center;
   }
 }
+@media screen and (max-width: 300px){
+  .img-data, .img-head {
+    display: none;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+}

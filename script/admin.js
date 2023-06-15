@@ -18,7 +18,7 @@ function addtoTable() {
     table.innerHTML += `
         <tr class="rows">
         <td>${data.name}</td>
-        <td><img src="${data.image}" class="table-img"></td>
+        <td class="img-data"><img src="${data.image}" class="table-img"></td>
         <td>R ${data.price}</td>
         <td>${data.category}</td>
         <td><button id="deleteButton()" class="delBtn btn">Delete</button></td>
