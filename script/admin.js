@@ -1,4 +1,6 @@
 let items = [];
+let admin = JSON.parse(localStorage.getItem("Items")) || [];
+
 function addtoTable(){
 
     let outfit = {
@@ -10,17 +12,23 @@ function addtoTable(){
     
     items.push(outfit);
     
-    let table = document.getElementById("admin-table");
+    let table = document.querySelector("tbody");
+    localStorage.setItem("Items", JSON.stringify(admin));
     table.innerHTML = "";
     items.forEach((data) => {
       table.innerHTML += `
-        <tr>
+        <tr class="rows">
         <td>${data.name}</td>
-        <td><img src="${data.image}"></td>
-        <td>${data.price}</td>
+        <td><img src="${data.image}" class="table-img"></td>
+        <td>R ${data.price}</td>
         <td>${data.category}</td>
-        <td></td>
+        <td><button id="deleteButton()" class="btn">Delete</button></td>
         </tr>
         `;
     });
+}
+
+
+function deleteButton() {
+  addtoTable() = ""
 }
