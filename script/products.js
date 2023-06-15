@@ -116,11 +116,17 @@ displayItems(items);
 let cart = JSON.parse(localStorage.getItem("Item")) || [];
 
 function pushToCart(itemID) {
-  let item = items.find((item) => item.id === itemID);
-  if (item && item.quantity > 0) {
-    cart.push(item);
-    item.quantity--;
-    updateToCart();
+  try {
+    let item = items.find((item) => item.id === itemID);
+    if (item && item.quantity > 0) {
+      cart.push(item);
+      item.quantity--;
+      updateToCart();
+    } else item && item.quantity <= 0;
+    alert(error);
+  } catch (error) {
+    item.quantity <= 0;
+    console.error("Unable to Add Product", error);
   }
 }
 

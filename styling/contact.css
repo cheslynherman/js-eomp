@@ -78,8 +78,8 @@ textarea {
   color: #b20600 !important;
 }
 .buttons {
-    margin: 10px;
-    padding-top: 10px;
+  margin: 10px;
+  padding-top: 10px;
 }
 
 .submit,
@@ -91,12 +91,13 @@ textarea {
   --bg: #000;
   transition: 0.2s;
 }
-.submit:hover, .reset:hover {
-    transform: translate(-0.25rem,-0.25rem);
-    box-shadow: 0.25rem 0.25rem var(--bg);
-    background: #b20600 !important;
-    color: white !important;
-    border: 2px solid #b20600;
+.submit:hover,
+.reset:hover {
+  transform: translate(-0.25rem, -0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: #b20600 !important;
+  color: white !important;
+  border: 2px solid #b20600;
 }
 
 /* footer styling */
@@ -126,4 +127,25 @@ footer {
 
 .footer-p {
   padding: 5px;
+}
+
+@media screen and (max-width: 699px) {
+  body {
+    background-image: url(https://i.postimg.cc/vDww7Jjf/pexels-antonio-dillard-4462784-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .reset,
+  .submit {
+    padding: 5px;
+  }
 }

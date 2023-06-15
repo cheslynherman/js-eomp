@@ -23,7 +23,7 @@
   transition: 0.2s;
 }
 .nav-btns:hover {
-  transform: translate(-0.25rem,-0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem var(--bg);
   background: white !important;
   color: #b20600 !important;
@@ -47,8 +47,6 @@ body {
   background-attachment: fixed;
   object-fit: cover;
 }
-
-
 
 .hero {
   height: 85vh;
@@ -93,7 +91,7 @@ body {
   transition: 0.2s;
 }
 .card-btns:hover {
-  transform: translate(-0.25rem,-0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem var(--bg);
   background: #b20600 !important;
   color: white !important;
@@ -144,4 +142,27 @@ footer {
 
 .footer-p {
   padding: 5px;
+}
+
+@media screen and (max-width: 699px) {
+  body {
+    background-image: url(https://i.postimg.cc/vDww7Jjf/pexels-antonio-dillard-4462784-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #product-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 }

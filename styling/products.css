@@ -16,15 +16,21 @@
   color: white !important;
   margin-bottom: 20px;
 }
-.nav-btns, .cart-btn, .checkout, .delete {
+.nav-btns,
+.cart-btn,
+.checkout,
+.delete {
   border: 1px solid white;
   color: white;
   margin: 10px;
   --bg: #000;
   transition: 0.2s;
 }
-.nav-btns:hover, .cart-btn:hover, .checkout:hover, .delete:hover {
-  transform: translate(-0.25rem,-0.25rem);
+.nav-btns:hover,
+.cart-btn:hover,
+.checkout:hover,
+.delete:hover {
+  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem var(--bg);
   background: white !important;
   color: #b20600 !important;
@@ -90,7 +96,8 @@ body {
   margin: 10px;
 }
 
-.add-button, .filter-buttons {
+.add-button,
+.filter-buttons {
   margin: 10px;
   background: white !important;
   color: #b20600 !important;
@@ -98,8 +105,9 @@ body {
   --bg: #000;
   transition: 0.2s;
 }
-.add-button:hover, .filter-buttons:hover {
-  transform: translate(-0.25rem,-0.25rem);
+.add-button:hover,
+.filter-buttons:hover {
+  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem var(--bg);
   background: #b20600 !important;
   color: white !important;
@@ -152,4 +160,30 @@ footer {
 
 .footer-p {
   padding: 5px;
+}
+
+@media screen and (max-width: 699px) {
+  body {
+    background-image: url(https://i.postimg.cc/vDww7Jjf/pexels-antonio-dillard-4462784-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -23,13 +23,12 @@
   transition: 0.2s;
 }
 .nav-btns:hover {
-  transform: translate(-0.25rem,-0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem var(--bg);
   background: white !important;
   color: #b20600 !important;
   border: 2px solid white;
 }
-
 
 .navbar-brand {
   padding: 5px;
@@ -49,32 +48,36 @@ body {
   object-fit: cover;
 }
 .heading {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.heading, table, label, input {
-    color: #b20600;
-}
-#inputs {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-}
-label {
-    padding-right: 5px;
-}
+.heading,
+table,
+label,
 input {
-    border: 2px solid #b20600;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 5px;
-}
-
-::placeholder{
   color: #b20600;
 }
-.addButton {
+#inputs {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+label {
+  padding-right: 5px;
+}
+input {
+  border: 2px solid #b20600;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+::placeholder {
+  color: #b20600;
+}
+.addButton,
+.delBtn {
   margin-left: 5px;
   background: white !important;
   color: #b20600 !important;
@@ -82,8 +85,9 @@ input {
   --bg: #000;
   transition: 0.2s;
 }
-.addButton:hover {
-  transform: translate(-0.25rem,-0.25rem);
+.addButton:hover,
+.delBtn:hover {
+  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem var(--bg);
   background: #b20600 !important;
   color: white !important;
@@ -91,55 +95,74 @@ input {
 }
 
 table {
-    width: 80%;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-tr, th, td {
-    border: 2px solid #b20600;
+tr,
+th,
+td {
+  border: 2px solid #b20600;
 }
 
 .rows {
-    height: 150px;
+  height: 150px;
 }
 .table-img {
-    height: 130px;
-    width: 130px;
+  height: 130px;
+  width: 130px;
 }
 #table {
-    margin-bottom: 20px;
-    /* padding: 10px; */
+  margin-bottom: 20px;
+  /* padding: 10px; */
 }
 
 /* footer styling */
 footer {
-    background: #b20600;
-    color: white;
+  background: #b20600;
+  color: white;
+}
+
+.social-links {
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footer-p {
+  padding: 5px;
+}
+
+@media screen and (max-width: 699px) {
+  body {
+    background-image: url(https://i.postimg.cc/vDww7Jjf/pexels-antonio-dillard-4462784-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
   }
-  
-  .social-links {
-    height: 50px;
-    width: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  
-  .footer {
+}
+
+@media screen and (max-width: 700px) {
+  #inputs {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
   }
-  
-  .footer-text {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-  }
-  
-  .footer-p {
-    padding: 5px;
-  }
-  
+}
