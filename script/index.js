@@ -3,22 +3,19 @@ let items = [
         id: 1,
         name: "Demon Slayer Iguro Outfit",
         image: "https://i.postimg.cc/zvH3cP3v/hossein-soltanloo-SCWi1-F9c-VYQ-unsplash.jpg",
-        price: 700,
-        category: ""
+        price: 2000,
     },
     {
         id: 2,
         name: "Joker Suit",
         image: "https://i.postimg.cc/BvMnmGZ4/daniel-lincoln-EZNEEg-WSV3k-unsplash.jpg",
-        price: 860,
-        category: ""
+        price: 2860,
     },
     {
         id: 3,
         name: "Pennywise the Clown Costume",
         image: "https://i.postimg.cc/yNZtQmyj/pexels-wilson-vitorino-3230473.jpg",
-        price: 950,
-        category: ""
+        price: 2120,
     },
 ];
 

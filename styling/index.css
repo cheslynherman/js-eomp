@@ -19,7 +19,17 @@
 .nav-btns {
   border: 1px solid white;
   margin: 10px;
+  --bg: #000;
+  transition: 0.2s;
 }
+.nav-btns:hover {
+  transform: translate(-0.25rem,-0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: white !important;
+  color: #b20600 !important;
+  border: 2px solid white;
+}
+
 .navbar-brand {
   padding: 5px;
 }
@@ -78,7 +88,16 @@ body {
 .card-btns {
   background: white !important;
   color: #b20600 !important;
-  border-color: #b20600 !important;
+  border: 2px solid #b20600;
+  --bg: #000;
+  transition: 0.2s;
+}
+.card-btns:hover {
+  transform: translate(-0.25rem,-0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: #b20600 !important;
+  color: white !important;
+  border: 2px solid white;
 }
 
 .card-img-top {
