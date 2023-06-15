@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&family=Tilt+Prism&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Special Elite", cursive;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+/* Nav Styling */
+.navbar {
+  background: #b20600;
+  color: white !important;
+  margin-bottom: 20px;
+}
+.nav-btns {
+  border: 1px solid white;
+  margin: 10px;
+}
+.navbar-brand {
+  padding: 5px;
+}
+
+.logo-img {
+  height: 65px;
+  width: 65px;
+}
+
+/* body and content styling */
+body {
+  background-image: url(https://i.postimg.cc/X79YM02w/stefano-pollio-ZC0-Ebd-LC8-G0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.heading {
+    margin-bottom: 20px;
+}
+
+.heading, table, label, input {
+    color: #b20600;
+}
+#inputs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+label {
+    padding-right: 5px;
+}
+input {
+    border: 2px solid #b20600;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+table {
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, th, td {
+    border: 2px solid #b20600;
+}
+
+.rows {
+    height: 150px;
+}
+.table-img {
+    height: 130px;
+    width: 130px;
+}
+#table {
+    margin-bottom: 20px;
+    /* padding: 10px; */
+}
+
+/* footer styling */
+footer {
+    background: #b20600;
+    color: white;
+  }
+  
+  .social-links {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .footer-text {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .footer-p {
+    padding: 5px;
+  }
+  
