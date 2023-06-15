@@ -19,7 +19,18 @@
 .nav-btns {
   border: 1px solid white;
   margin: 10px;
+  --bg: #000;
+  transition: 0.2s;
 }
+.nav-btns:hover {
+  transform: translate(-0.25rem,-0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: white !important;
+  color: #b20600 !important;
+  border: 2px solid white;
+}
+
+
 .navbar-brand {
   padding: 5px;
 }
@@ -48,6 +59,7 @@ body {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
 label {
     padding-right: 5px;
@@ -57,6 +69,25 @@ input {
     border-radius: 10px;
     margin-right: 10px;
     margin-left: 5px;
+}
+
+::placeholder{
+  color: #b20600;
+}
+.addButton {
+  margin-left: 5px;
+  background: white !important;
+  color: #b20600 !important;
+  border-color: #b20600 !important;
+  --bg: #000;
+  transition: 0.2s;
+}
+.addButton:hover {
+  transform: translate(-0.25rem,-0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: #b20600 !important;
+  color: white !important;
+  border: 2px solid white;
 }
 
 table {

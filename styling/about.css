@@ -19,7 +19,18 @@
 .nav-btns {
   border: 1px solid white;
   margin: 10px;
+  --bg: #000;
+  transition: 0.2s;
 }
+
+.nav-btns:hover {
+  transform: translate(-0.25rem,-0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: white !important;
+  color: #b20600 !important;
+  border: 2px solid white;
+}
+
 .navbar-brand {
   padding: 5px;
 }
@@ -64,6 +75,7 @@ body {
   margin: 10px;
 }
 
+
 /* testimonials section */
 .testimonial-section {
   color: #b20600;
@@ -90,7 +102,7 @@ body {
 }
 .card-img-top {
   border-radius: 10px;
-  height: 60%;
+  height: 55%;
 }
 
 /* info section */

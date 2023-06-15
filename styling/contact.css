@@ -1,107 +1,129 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&family=Tilt+Prism&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&family=Tilt+Prism&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Special Elite', cursive;
-    font-weight: bolder;
-    font-style: italic;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Special Elite", cursive;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 /* Nav Styling */
 .navbar {
-    background: #B20600;
-    color: white !important;
-    margin-bottom: 20px;
+  background: #b20600;
+  color: white !important;
+  margin-bottom: 20px;
 }
 .nav-btns {
-    border: 1px solid white;
-    margin: 10px;
-    
+  border: 1px solid white;
+  margin: 10px;
+  --bg: #000;
+  transition: 0.2s;
+}
+
+.nav-btns:hover {
+  transform: translate(-0.25rem, -0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: white !important;
+  color: #b20600 !important;
+  border: 2px solid white;
 }
 .navbar-brand {
-    padding: 5px;
+  padding: 5px;
 }
 
 .logo-img {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 /* body and content styling */
 body {
-    background-image: url(https://i.postimg.cc/X79YM02w/stefano-pollio-ZC0-Ebd-LC8-G0-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    object-fit: cover;
+  background-image: url(https://i.postimg.cc/X79YM02w/stefano-pollio-ZC0-Ebd-LC8-G0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
 }
 
 .heading {
-    margin-bottom: 20px;
-    color: #B20600;
+  margin-bottom: 20px;
+  color: #b20600;
 }
 
 .contact {
-    width: 55%;
-    border-left: 2px solid #B20600;
-    border-top: 2px solid #B20600;
-    padding: 5vh !important;
-    border-radius: 20px !important;
-    margin-bottom: 20px !important;
+  width: 55%;
+  border-left: 2px solid #b20600;
+  border-top: 2px solid #b20600;
+  padding: 5vh !important;
+  border-radius: 20px !important;
+  margin-bottom: 20px !important;
 }
 
 label {
-    padding-right: 15px;
-    color: #B20600;
+  padding-right: 15px;
+  color: #b20600;
 }
 
-input, textarea {
-    border: 2px solid #B20600 !important;
-    color: #B20600 !important;
-    /* background: transparent !important; */
+input,
+textarea {
+  border: 2px solid #b20600 !important;
+  color: #b20600 !important;
+  /* background: transparent !important; */
 }
 
 ::placeholder {
-    color: #B20600 !important;
+  color: #b20600 !important;
+}
+.buttons {
+    margin: 10px;
+    padding-top: 10px;
 }
 
-.submit, .reset {
-    color: #B20600;
-    border: 2px solid #B20600;
-    margin-left: 5px;
-    margin-right: 5px;
+.submit,
+.reset {
+  color: #b20600;
+  border: 2px solid #b20600;
+  margin-left: 5px;
+  margin-right: 5px;
+  --bg: #000;
+  transition: 0.2s;
+}
+.submit:hover, .reset:hover {
+    transform: translate(-0.25rem,-0.25rem);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+    background: #b20600 !important;
+    color: white !important;
+    border: 2px solid #b20600;
 }
 
 /* footer styling */
 footer {
-    background: #B20600;
-    color: white;
+  background: #b20600;
+  color: white;
 }
 
 .social-links {
-    height: 50px;
-    width: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .footer-text {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .footer-p {
-    padding: 5px;
+  padding: 5px;
 }

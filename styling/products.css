@@ -16,9 +16,23 @@
   color: white !important;
   margin-bottom: 20px;
 }
-.nav-btns {
+.nav-btns, .cart-btn, .checkout, .delete {
   border: 1px solid white;
+  color: white;
   margin: 10px;
+  --bg: #000;
+  transition: 0.2s;
+}
+.nav-btns:hover, .cart-btn:hover, .checkout:hover, .delete:hover {
+  transform: translate(-0.25rem,-0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: white !important;
+  color: #b20600 !important;
+  border: 2px solid white;
+}
+
+.checkout {
+  margin: 5px;
 }
 .navbar-brand {
   padding: 5px;
@@ -47,6 +61,10 @@ body {
   color: #b20600;
   margin-bottom: 20px;
 }
+.filters {
+  padding: 10px;
+}
+
 /* card styling */
 
 #items {
@@ -72,9 +90,19 @@ body {
 }
 
 .add-button, .filter-buttons {
+  margin: 10px;
   background: white !important;
   color: #b20600 !important;
   border-color: #b20600 !important;
+  --bg: #000;
+  transition: 0.2s;
+}
+.add-button:hover, .filter-buttons:hover {
+  transform: translate(-0.25rem,-0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: #b20600 !important;
+  color: white !important;
+  border: 2px solid white;
 }
 
 .card-img-top {
